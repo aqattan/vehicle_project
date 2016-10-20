@@ -15,15 +15,17 @@
 
   <tbody>
     <% @people.each do |person| %>
+    <form name="myForm" action="#" onsubmit="return validateForm()" method="post">
       <tr>
-        <td><%= person.first_name %></td>
-        <td><%= person.last_name %></td>
-        <td><%= person.email %></td>
+        <td><input type="text" name="firstname" placeholder="First name"></td>
+        <td><input type="text" name="lastname" placeholder="Last name"></td>
+        <td><input type="text" name="email_address" placeholder="example@example.com"></td>
         <td><%= person.date_of_birth %></td>
         <td><%= link_to 'Show', person %></td>
         <td><%= link_to 'Edit', edit_person_path(person) %></td>
         <td><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
+    </form>
     <% end %>
   </tbody>
 </table>

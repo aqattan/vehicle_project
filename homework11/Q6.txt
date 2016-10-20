@@ -1,0 +1,1 @@
+these refers to the files that created by default that have HTML, Javascript, css and Ruby inside. 

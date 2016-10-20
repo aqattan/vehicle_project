@@ -14,3 +14,22 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+function validateForm() {
+            var i = document.forms["myForm"]["firstname"].value;
+            if (i == null || i == "") {
+            alert("Enter your First name");
+            return false;
+            }
+            var x = document.forms["myForm"]["lastname"].value;
+            if (x == null || x == "") {
+            alert("Enter your Last name");
+            return false;
+            }
+            var y = document.forms["myForm"]["email_address"].value;
+            var atpos = y.indexOf("@");
+            var dotpos = y.lastIndexOf(".");
+            if (atpos<1 || dotpos<atpos+2 || dotpos+2>=y.length) {
+            alert("Enter a valid e-mail address");
+            return false;
+            }
+}
