@@ -1,0 +1,43 @@
+Javascript:
+
+var a=[1,2,3,5,6,9,12,15,18,20,25,27];
+var two=[];
+var three=[];
+var five=[];
+for (var i=0; i<a.length; i++){
+	if(a[i]%2 ===0){
+		two.push(a[i]);
+	}
+	if (a[i]%3 ===0){
+		three.push(a[i]);
+	}
+	if(a[i]%5 ===0){
+		five.push(a[i]);
+	}
+}
+console.log (two);
+console.log (three);
+console.log (five);
+
+Ruby: 
+
+a=[1,2,3,5,6,9,12,15,18,20,25,27]
+two=[]
+three=[]
+five=[]
+i=0;
+while i<a.length 
+	if a[i]%2 ==0
+		two.push a[i]
+	end
+	if a[i]%3 ==0
+		three.push a[i]
+	end
+	if a[i]%5 ==0
+		five.push a[i]
+	end
+	i=i+1;
+end
+puts (two)
+puts (three)
+puts (five)

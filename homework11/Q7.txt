@@ -1,0 +1,41 @@
+javascript:
+
+var b=['red','white','blue'];
+var a=[1,2,3];
+var c=[a,b];
+var array=[];
+var i=0;
+var j=0;
+for (i=0; c.length !== 0; i++) {
+	for(j=0; j<c.length; j++){
+		if(i >=c[j].length){
+		c.splice(j,1);
+		}
+		else{
+		array.push(c[j][i]);
+		}
+	}
+}
+console.log (array);
+
+Ruby:
+
+b=['red','white','blue']
+a=[1,2,3]
+c=[a,b]
+array=[]
+i=0
+j=0
+while c.length != 0
+	while j<c.length
+		if i >=c[j].length
+		c.slice!(j,1)
+		else
+		array.push(c[j][i])
+	end
+	i += 1
+	j += 1
+end
+end
+puts array
+
